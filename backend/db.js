@@ -1,7 +1,7 @@
 
 const mongoose = require('mongoose');
 mongoose.set('strictQuery', true); // this is used only to srpess the warning coming as suggested the query from terminal i pasted it here 
-const mongoURI = 'mongodb://mrinal7sawarn:sawarn1234@ac-pqnalnn-shard-00-00.0irdgt4.mongodb.net:27017,ac-pqnalnn-shard-00-01.0irdgt4.mongodb.net:27017,ac-pqnalnn-shard-00-02.0irdgt4.mongodb.net:27017/goFoodmern?ssl=true&replicaSet=atlas-vzmz9f-shard-0&authSource=admin&retryWrites=true&w=majority'
+const mongoURI = '<PASTE YOUR MONGO URI>'
 const mongoDB = async () => {
     await mongoose.connect(mongoURI, { useNewUrlParser: true }, async (err, result) => {
         if (err) console.log("error", err)
